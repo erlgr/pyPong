@@ -5,9 +5,9 @@ import random
 pygame.init()
 
 # Constants
-WIDTH, HEIGHT = 800, 600
-BALL_SPEED = 0.6
-PADDLE_SPEED = 1
+WIDTH, HEIGHT = 1800, 1000
+BALL_SPEED = 40
+PADDLE_SPEED = 20
 
 # Colors
 WHITE = (255, 255, 255)
@@ -18,8 +18,8 @@ screen = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption("Pong Game")
 
 # Create paddles and ball
-paddle_width, paddle_height = 15, 100
-ball_width, ball_height = 15, 15
+paddle_width, paddle_height = 15, 400
+ball_width, ball_height = 90, 90
 paddle_speed = PADDLE_SPEED
 
 player_paddle = pygame.Rect(50, HEIGHT // 2 - paddle_height // 2, paddle_width, paddle_height)
